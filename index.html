@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class HTML DIO 1.0</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Introdução ao HTML</h1>
+    <hr style="height: 3px; border-width: 0; color: gray; background-color: gray; width: 60%; text-align: center">
+    
+    <h3>Navegação</h3>
+    <nav>
+        <ul>
+            <li><a href="#html">O que é HTML?</a></li>
+            <li><a href="#tags">TAGS</a></li>
+            <li><a href="#tags-texto">TAGS de Texto</a></li>
+            <li><a href="#atributos">Atributos de TAGS</a></li>
+            <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+            <li><a href="#links">Links</a></li>
+        </ul>
+    </nav>
+
+    <section id="html">
+        <h3>O que é HTML?</h3>
+        <p style="text-align: justify;">
+            HTML, ou Linguagem de Marcação de Hipertexto (<i>HyperText Markup Language</i>), é a linguagem fundamental utilizada na construção de páginas da web. Desenvolvida por Tim Berners-Lee na década de 1990, o HTML permite a criação e estruturação de documentos que podem ser interpretados por navegadores, definindo como o conteúdo deve ser apresentado ao usuário. Os documentos HTML são salvos com as extensões .html ou .htm e são fundamentais para a navegação na internet, pois permitem a criação de hiperlinks que conectam diferentes páginas e sites. A versão mais recente, HTML5, introduziu novas funcionalidades, como suporte nativo para áudio e vídeo, além de novas tags semânticas que melhoram a estruturação do conteúdo e a otimização para motores de busca (SEO).
+        </p>
+    </section>
+
+    <section id="tags">
+        <h3>TAGS</h3>
+        <p style="text-align: justify;">
+            As tags HTML são os elementos fundamentais que definem a estrutura de uma página web. Cada tag HTML é composta por um nome de tag, que é cercado por colchetes angulares. Por exemplo, a tag <code>&lt;p&gt;</code> é usada para definir um parágrafo.
+        </p>
+        <p style="text-align: justify;">
+            Tags podem ser de abertura e fechamento, como <code>&lt;h1&gt;Título&lt;/h1&gt;</code>, ou auto-fechadas, como <code>&lt;br /&gt;</code> para uma quebra de linha.
+        </p>
+    </section>
+
+    <section id="tags-texto">
+        <h3>TAGS de Texto</h3>
+        <p style="text-align: justify;">
+            As tags de texto são usadas para formatar e estruturar o conteúdo textual de uma página HTML. Aqui estão algumas das principais tags de texto:
+        </p>
+        
+        <h4>Tag de Parágrafo</h4>
+        <p style="text-align: justify;">
+            A tag <code>&lt;p&gt;</code> é usada para definir um parágrafo. Exemplo:
+        </p>
+        <pre><code>&lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;</code></pre>
+
+        <h4>Tag de Cabeçalho</h4>
+        <p style="text-align: justify;">
+            As tags de cabeçalho, de <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>, são usadas para definir títulos e subtítulos. Exemplo:
+        </p>
+        <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;</code></pre>
+
+        <h4>Tag de Negrito e Itálico</h4>
+        <p style="text-align: justify;">
+            A tag <code>&lt;strong&gt;</code> é usada para texto em negrito, enquanto <code>&lt;em&gt;</code> é usada para texto em itálico. Exemplos:
+        </p>
+        <p><strong>Texto em Negrito</strong></p>
+        <p><em>Texto em Itálico</em></p>
+
+        <h4>Tag de Citação</h4>
+        <p style="text-align: justify;">
+            A tag <code>&lt;blockquote&gt;</code> é usada para citações em bloco. Exemplo:
+        </p>
+        <blockquote>Esta é uma citação.</blockquote>
+    </section>
+
+    <section id="atributos">
+        <h3>Atributos de TAGS</h3>
+        <p style="text-align: justify;">
+            Os atributos são informações adicionais que podem ser adicionadas às tags HTML para modificar seu comportamento ou aparência. Eles são sempre especificados dentro da tag de abertura e seguem a sintaxe <code>nome="valor"</code>. Por exemplo:
+        </p>
+        <pre><code>&lt;a href="https://www.exemplo.com"&gt;Clique aqui&lt;/a&gt;</code></pre>
+        <p style="text-align: justify;">
+            Os atributos podem ser obrigatórios ou opcionais. Um exemplo de atributo obrigatório é o <code>href</code> em uma tag de link, que especifica o destino do link.
+        </p>
+    </section>
+
+    <section id="listas">
+        <h3>Listas Ordenadas e Não Ordenadas</h3>
+        <p style="text-align: justify;">
+            HTML permite a criação de listas ordenadas e não ordenadas. As listas ordenadas são criadas usando a tag <code>&lt;ol&gt;</code>, enquanto as listas não ordenadas usam a tag <code>&lt;ul&gt;</code>.
+        </p>
+        
+        <h4>Lista Ordenada</h4>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+
+        <h4>Lista Não Ordenada</h4>
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+        </ul>
+    </section>
+
+    <section id="links">
+        <h3>Links</h3>
+        <p style="text-align: justify;">
+            Os links são criados usando a tag <code>&lt;a&gt;</code>. O atributo <code>href</code> é utilizado para especificar o destino do link. Por exemplo:
+        </p>
+        <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">Visite o primeiro site da web!</a>
+        <p style="text-align: justify;">
+            Os links podem ser internos, levando a outras partes da mesma página, como na navegação no início desta página, ou externos, levando a outras páginas na web.
+        </p>
+    </section>
+
+    <footer>
+        <small>Este é um exemplo simples de um documento HTML. Para mais informações, consulte a <abbr title="World Wide Web Consortium">W3C</abbr>.</small>
+    </footer>
+</body>
+</html>
